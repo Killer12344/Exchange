@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Primary Meta Tags -->
+<title>Exchange Index</title>
+<meta name="title" content="MMKx">
+<meta name="description" content="Testing for SWD 7 project...">
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mms-it.com">
+<meta property="og:title" content="MMKx">
+<meta property="og:description" content="Testing for SWD 7 project...">
+<meta property="og:image" content="image/Asset 4.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://mms-it.com">
+<meta property="twitter:title" content="MMKx">
+<meta property="twitter:description" content="Testing for SWD 7 project...">
+<meta property="twitter:image" content="image/Asset 4.png">
+
+<title>Index</title>
+    <link rel="shortcut icon" href="image/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="vendor/animate.min.css">
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+<body>
+
+
+
+<div class="container animate__animated animate__slideInDown">
+    <div class="output">
+        <div class="logo">
+            <img class="logo-style" src="image/logo.svg">
+            <p class="logo-name">
+                MMKx
+            </p>
+        </div>
+        <div class="result">
+            <p class="result-item" id="result">
+                00.0
+            </p>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <form class="calculate-body" id="calculate">
+        <div class="input same-container">
+            <label>Input</label>
+            <input type="number" class="input-style" id="input" placeholder="00.0" autofocus min="1" required>
+        </div>
+        <div class="from same-container">
+            <label>From</label>
+            <select id="from" class="form-style" required>
+                <option disabled value="head" selected>Select Currency</option>
+            </select>
+        </div>
+        <div class="to same-container">
+            <label>To</label>
+            <select id="to" class="to-style" required></select>
+
+        </div>
+        <div class="calculate same-container">
+            <button type="submit" class="calculate-btn" id="calculateBtn">Calculate</button>
+        </div>
+    </form>
+
+    <div class="table-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="tableList">
+
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <div class="delete-btn">
+        <button class="delete" id="deleteBtn">Clear All</button>
+    </div>
+</div>
+
+<button class="moon animate__animated animate__slideInUp" onclick="changeMod()">
+    <i class="fas fa-moon" id="sun"></i>
+</button>
+
+
+<script src="js/data.js"></script>
+<script src="js/style.js"></script>
+</body>
+</html>

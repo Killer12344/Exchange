@@ -1,0 +1,34 @@
+:root{
+    --night-first-color : #a9acb1;
+    --night-second-color : #3a3b3c;
+}
+
+body.night-mode{
+    background-color: #19191a
+}
+
+.night-mode tr{
+    background-color:  var(--night-second-color);
+}
+
+.night-mode .divider{
+    background-color: var(--night-first-color);
+}
+.night-mode .result-item{
+    color: var(--night-first-color);
+}
+
+.night-mode td{
+    color: var(--night-first-color);
+}
+
+.night-mode input,.night-mode select{
+    color: var(--night-first-color);
+    background: var(--night-second-color);
+}
+.night-mode .moon{
+    background-color: var(--light);
+}
+.night-mode .fa-moon{
+    color: var(--dark);
+}
